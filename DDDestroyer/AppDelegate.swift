@@ -44,6 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var item: NSMenuItem = NSMenuItem.init(title: "Clear ALL", action: #selector(AppDelegate.deleteAll), keyEquivalent: "")
         menu.addItem(item)
         
+        menu.addItem(NSMenuItem.separator())
+        
         self.subDirectories = self.derivedFolderUrl.subDirectories
         self.menuItems = []
         for url: URL in self.subDirectories {
@@ -56,6 +58,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             menu.addItem(item)
             self.menuItems.append(item)
         }
+        
+        menu.addItem(NSMenuItem.separator())
+        
+        item = NSMenuItem.init(title: "Open folder ...", action: #selector(AppDelegate.openFolder), keyEquivalent: "")
+        menu.addItem(item)
         
         self.statusItem?.popUpMenu(menu)
     }
@@ -71,6 +78,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     // MARK: Working with derived data
+    
+    func openFolder() {
+        NSWorkspace.shared().selectFile(nil, inFileViewerRootedAtPath: self.derivedFolderUrl.path)
+    }
     
     func deleteDerivedData(_ subfolder: String? = nil) {
         do {
