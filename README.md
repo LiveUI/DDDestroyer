@@ -1,6 +1,8 @@
 # DDDestroyer
 macOS tool to clear Derived Data folder written in Swift
 
+![Screenshot](/screenshot.png?raw=true "Screenshot")
+
 # Installation
 Clone and run, it's not complicated at all :)
 
