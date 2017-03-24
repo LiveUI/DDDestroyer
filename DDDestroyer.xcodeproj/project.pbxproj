@@ -33,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152BAC661E8519FD00A0F78D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		152BAC671E8519FD00A0F78D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ECA602631E829424000F40FD /* DDDestroyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDDestroyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA602661E829424000F40FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA602681E829424000F40FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		ECA6025A1E829424000F40FD = {
 			isa = PBXGroup;
 			children = (
+				152BAC661E8519FD00A0F78D /* LICENSE */,
+				152BAC671E8519FD00A0F78D /* README.md */,
 				ECA602651E829424000F40FD /* DDDestroyer */,
 				ECA602751E829424000F40FD /* DDDestroyerTests */,
 				ECA602801E829424000F40FD /* DDDestroyerUITests */,

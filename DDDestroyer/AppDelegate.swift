@@ -41,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func didTapStatusBarIcon() {
         let menu: NSMenu = NSMenu.init()
         
-        var item: NSMenuItem = NSMenuItem.init(title: "Clear all!", action: #selector(AppDelegate.deleteAll), keyEquivalent: "")
+        var item: NSMenuItem = NSMenuItem.init(title: "Clear ALL", action: #selector(AppDelegate.deleteAll), keyEquivalent: "")
         menu.addItem(item)
         
         self.subDirectories = self.derivedFolderUrl.subDirectories
