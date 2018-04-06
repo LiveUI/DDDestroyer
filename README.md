@@ -1,6 +1,9 @@
 # DDDestroyer
 macOS tool to clear Derived Data folder written in Swift
 
+> <b>Superseded</b> by https://github.com/LiveUI/Swifter
+
+
 ![Screenshot](/screenshot-menu.png?raw=true "Screenshot")
 
 # Installation
